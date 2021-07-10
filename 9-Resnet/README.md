@@ -26,4 +26,6 @@
 * Target Accuracy - 93%
 
 # RESULTS
+## Model summary
+![Model summary] (S9ModelSummary.jpg)
 
