@@ -26,6 +26,16 @@
 * Target Accuracy - 93%
 
 # RESULTS
-## Model summary
-![Model summary] (S9ModelSummary.jpg)
+1. Model summary
+![Model summary](S9ModelSummary.jpg)
 
+2. LR Test - Model trained for 10 epochs for LRs: 1e-5, 1e-4, 1e-3, 1e-3 giving min validation losses of 0.5270288520812988, 0.5230412246704101, 0.504125309753418, 0.5248147918701171 respectively.
+3. One Cycle LR 
+      1. min_lr = 0
+      2. max_lr = 1e-2
+      3. step_size_up = 98 (iterations per epoch) * 5
+      4. step_size_down = 98 * 19
+4. L2 regularization coefficient - 1e-1 
+5. 90.44%, 91.78% validation accuracy in 23rd, 24th epoch respectively. (1e-3, 1e-2 LRs without L2 regularization give max validation accuracies of 75.83%, 88.68% resp)
+6. Loss Curves
+![Loss curves](s9_curves.png)
